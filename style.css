@@ -1,0 +1,99 @@
+*{
+    margin:0;
+}
+
+:root {
+    --blue:#356f91;
+    --lgblue:#96c9dd;
+    --cyan:#3e93a3;
+    --dkcyan:#215a69;
+    --indigo1:#292530;
+    --indigo2:#ebe9f5;
+}
+
+body {
+    background-color: var(--blue);
+    color: var(--indigo1);
+}
+
+header, main, footer {
+    padding: 10px;
+}
+
+p {
+    padding: 4px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+
+    background-color: var(--lgblue);
+
+    gap: 8px;
+}
+
+header img {
+    max-height: 100px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    list-style: none;
+}
+
+header ul li::before {
+    content: "→";
+}
+
+main {
+    color:var(--indigo2);
+    min-height: 100vh;
+}
+
+main a {
+    color: var(--lgblue);
+}
+
+footer {
+    background-color: var(--lgblue);
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: var(--lgblue);
+    color: var(--indigo1);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 4px;
+}
+
+.pergunta {
+    margin: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    min-height: 24px;
+    padding: 4px;
+    background-color: var(--indigo2);
+}
+
+.enviar-button{
+    width: 100%;
+    color: var(--indigo2);
+    background-color: var(--blue);
+}

@@ -97,3 +97,15 @@ input, textarea {
     color: var(--indigo2);
     background-color: var(--blue);
 }
+
+.img50{
+    max-width: 50%;
+}
+
+.img80{
+    max-width: 80%;
+}
+
+.type {
+    max-width: 5%;
+}

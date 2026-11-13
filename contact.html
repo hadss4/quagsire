@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="https://wallpapercave.com/wp/wp2525685.png" alt="Imagem do Quagsire acenando">
+        <img src="images/quag.png" alt="Imagem do Quagsire acenando">
         <div>
         <h1>Quagsire!</h1>
         <nav>
@@ -23,24 +23,26 @@
 
     <main>
         <h2 class="center">Fazer um comentário</h2>
-        <form>
+        <form method="GET">
             <div class="pergunta">
                 <label for="nome">Seu nome:</label>
-                <input id="nome" type="text" placeholder="Digite seu nome">
+                <input id="nome" name="nome" type="text" required placeholder="Digite seu nome">
             </div>
 
             <div class="pergunta">
                 <label for="email">Seu email:</label>
-                <input id="email" type="email" placeholder="Digite seu endereço de email">
+                <input id="email" name="email" type="email" required placeholder="Digite seu endereço de email">
             </div>
 
             <div class="pergunta">
                 <label for="msg">Seu comentário:</label>
-                <textarea id="msg" rows="5" placeholder="Escreva um comentário respeitoso :D"></textarea>
+                <textarea id="msg" name="msg" rows="5" required placeholder="Escreva um comentário respeitoso :D"></textarea>
             </div>
 
             <button type="submit" class="enviar-button">Enviar!</button>
         </form>
+
+        <p><strong>ATENÇÃO! </strong> esses dados NÃO serão utilizados e/ou armazenados. Isso é apenas uma DEMONSTRAÇÃO!</p>
     </main>
 
     <footer>

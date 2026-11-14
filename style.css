@@ -33,14 +33,14 @@ header {
     gap: 8px;
 }
 
-header img {
+#quag{
     max-height: 100px;
 }
 
 header ul {
     display: flex;
     flex-direction: row;
-    column-gap: 40px;
+    column-gap: 20%;
     list-style: none;
 }
 
@@ -98,6 +98,11 @@ input, textarea {
     background-color: var(--blue);
 }
 
+.enviar-button:hover{
+    background-color: var(--indigo1);
+    color: var(--indigo2);
+}
+
 .img50{
     max-width: 50%;
 }
@@ -108,4 +113,12 @@ input, textarea {
 
 .type {
     max-width: 5%;
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+main a:hover {
+    color: var(--indigo2);
 }
